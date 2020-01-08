@@ -157,8 +157,8 @@ def describe_ppdnet(model, img, kpts, N, mag_factor, use_gpu = True):
         data = patches[i:i+bs]
 
         data = torch.from_numpy(np.asarray(data)).float() / 255.
-        data -= 0.443728476019
-        data /= 0.20197947209
+        data -= 0.44
+        data /= 0.20
 
         data = torch.unsqueeze(data, 1)
 
